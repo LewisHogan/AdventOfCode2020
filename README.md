@@ -25,3 +25,23 @@ A password is valid if it contains at least n instances of a specified character
 The second task of day two remains the same as the first, but has uses different validation criteria.
 
 A password is valid if it contains a character at either index m or n (indices are 1 based instead of 0 based).
+
+## Day Three
+
+Day Three involves finding the number of times we land on a space with a tree when moving in a fixed pattern.
+
+### Part One
+
+Part one involves solving the above problem by stepping with a slope of 3 on the right and 1 down.
+
+### Part Two
+
+Part two involves solving the same problem as in part one, but requires counting multiple slopes:
+
+- Right 1, down 1.
+- Right 3, down 1. (checked in part one)
+- Right 5, down 1.
+- Right 7, down 1.
+- Right 1, down 2.
+
+The results of all these slopes is then multiplied together.
