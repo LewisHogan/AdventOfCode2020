@@ -36,7 +36,7 @@ function partTwo(entries) {
 async function main() {
     fs.readFile('./01-report-repair/input.txt', 'utf-8', (err, input) => {
         if (err) {
-            console.error('Unable to read input file.');
+            console.error(`Unable to read input file: ${err}`);
             process.exit(1);
         }
 
